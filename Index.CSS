@@ -1,0 +1,282 @@
+body {
+width: 100%;
+margin: auto;
+margin-top: 0;
+padding: 0%;
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+      font-size: 0.75rem;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    html {
+      font-size: 0.50rem;
+    }
+  }
+
+.container {
+background-color:#BCF5A6;
+width: 100%;
+height: 8rem;
+display: flex;
+justify-content: center;
+margin: auto;
+align-items: center;
+position: relative;
+z-index: 0;
+}
+
+.smashinggyms {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 5rem;
+display: absolute;
+justify-content: center;
+color: black;
+margin-top: 3.5rem;
+align-items: center;
+text-align: center;
+user-select: text; 
+}
+
+.horizline {
+height: 5rem;
+width: 0.3rem;
+background-color: black;
+margin: 0 auto;
+position: absolute;
+left: 46rem;
+top: 1.3rem;
+}
+
+.horizline2 {
+height: 5rem;
+width: 0.3rem;
+background-color: black;
+margin: 0 auto;
+position: absolute;
+right: 46rem;
+top: 1.3rem;
+}
+
+.navbar {
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: -0.2rem;
+left: 14rem;
+}
+  
+.nav-list {
+list-style-type: none;
+display: flex;
+margin: 0;
+padding: 0;
+z-index: 1;
+margin-top: 3.25rem;
+right: 70rem;
+font-size: 1.5rem;
+}
+  
+.nav-item {
+margin-right: 1rem;
+color: rgb(0, 0, 0);
+text-decoration: none;
+padding: 0.5rem 1rem;
+font-family: 'Bebas Neue', sans-serif;
+white-space: nowrap;
+margin-right: 5rem;
+transition: transform 0.5s ease, opacity 0.5s ease, font-size 0.3s ease, background-color 0.3s ease, color 0.5s ease;
+opacity: 1;
+border-radius: 2rem;
+}
+
+.nav-item:not(:hover) {
+opacity: 0.65;
+}
+      
+.nav-item:hover {
+background-color: rgba(0, 0, 0, 0.5);
+transform: scale(1.2);
+opacity: 1;
+font-size: 1.6rem;
+color: rgb(223, 230, 214);
+}
+      
+.nav-item:hover ~ .nav-item2 {
+opacity: 0.5;
+}
+    
+.navbar2 {
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 5rem;
+right: 11rem;
+}
+      
+.nav-list2 {
+list-style-type: none;
+display: flex;
+margin: 0;
+padding: 0;
+z-index: 1;
+margin-top: -2rem;
+left: 75rem;
+font-size: 1.5rem;
+}
+      
+.nav-item2 {
+margin-right: 5rem;
+color: rgb(0, 0, 0);
+text-decoration: none;
+padding: 0.5rem 1rem;
+font-family: 'Bebas Neue', sans-serif;
+white-space: nowrap;
+transition: transform 0.5s ease, opacity 0.5s ease, font-size 0.3s ease, background-color 0.3s ease, color 0.5s ease;
+opacity: 1;
+border-radius: 2rem;
+}
+
+.nav-item2:not(:hover) {
+opacity: 0.65;
+}
+  
+.nav-item2:hover {
+background-color: rgba(0, 0, 0, 0.5);
+transform: scale(1.2);
+opacity: 1;
+font-size: 1.6rem;
+color: rgb(223, 230, 214);
+}
+  
+.nav-item2:hover ~ .nav-item2 {
+opacity: 0.5;
+}
+
+/* Image slider */
+
+.box {
+display: flex;
+align-items: flex-start;
+background: #fff;
+height: 50vh;
+overflow: hidden;
+position: relative;
+object-fit: cover;
+}
+
+.box .single-box img {
+position: absolute;
+min-width: 100%;
+min-height: 100%;
+height: 35rem;
+background: #000;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+opacity: 0;
+transform: scale(1.5) rotate(15deg);
+-webkit-animation: animate 32s infinite;
+animation: animate 32s infinite;
+}
+
+.box .single-box:nth-child(3) img {
+-webkit-animation-delay: 8s;
+animation-delay: 8s;
+}
+
+.box .single-box:nth-child(2) img {
+-webkit-animation-delay: 16s;
+animation-delay: 16s;
+}
+
+.box .single-box:nth-child(1) img {
+-webkit-animation-delay: 24s;
+animation-delay: 24s;
+}
+
+@keyframes animate {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+/* Text */
+
+.colorblock {
+background-color:#BCF5A6;
+max-width: 100%;
+margin: 0 auto;
+margin-top: 0rem;
+position: relative;
+height: 22rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.goal {
+font-family: 'Geologica', sans-serif;
+text-align: center;
+font-size: 1.25rem;
+max-width: 500px;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+bottom: 3.5rem;
+}
+
+.please {
+font-family: 'Geologica', sans-serif;
+text-align: center;
+font-size: 1.25rem;
+max-width: 500px;
+position: absolute;
+right: 4rem;
+bottom: 3.5rem
+}
+
+.mission {
+font-family: 'Geologica', sans-serif;
+text-align: center;
+font-size: 1.25rem;
+max-width: 500px;
+position: absolute;
+left: 4rem;
+bottom: 2rem
+}
+
+.rocket {
+width: 5rem;
+height: 5rem;
+position: absolute;
+margin-top: 40rem;
+margin-left: 17rem;
+z-index: 6;
+}
+    
+.suitcase {
+width: 5rem;
+height: 5rem;
+position: absolute;
+margin-top: 39rem;
+margin-left: 56rem;
+z-index: 6;
+}
+    
+.mglass {
+width: 5rem;
+height: 5rem;
+position: absolute;
+margin-top: 40rem;
+margin-left: 96rem;
+z-index: 6;
+}
