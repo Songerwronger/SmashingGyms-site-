@@ -1,0 +1,259 @@
+body {
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    padding: 0%;
+    }
+    
+    @media screen and (max-width: 1000px) {
+        html {
+          font-size: 0.75rem;
+        }
+      }
+    
+      @media screen and (max-width: 700px) {
+        html {
+          font-size: 0.50rem;
+        }
+      }
+    
+    .container {
+    background-color:#BCF5A6;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    }
+    
+    .smashinggyms {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    display: absolute;
+    justify-content: center;
+    color: black;
+    margin-top: 3.5rem;
+    align-items: center;
+    text-align: center;
+    }
+    
+    .horizline {
+    height: 5rem;
+    width: 0.3rem;
+    background-color: black;
+    margin: 0 auto;
+    position: absolute;
+    left: 46rem;
+    top: 1.3rem;
+    }
+    
+    .horizline2 {
+    height: 5rem;
+    width: 0.3rem;
+    background-color: black;
+    margin: 0 auto;
+    position: absolute;
+    right: 46rem;
+    top: 1.3rem;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -0.5rem;
+      left: 14rem;
+      text-decoration: none;
+      }
+        
+      .nav-list {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      z-index: 1;
+      margin-top: 2.8rem;
+      right: 70rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+      }
+        
+      .nav-item {
+      margin-right: 1rem;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-family: 'Bebas Neue', sans-serif;
+      white-space: nowrap;
+      margin-right: 5rem;
+      transition: transform 0.5s ease, opacity 0.5s ease, font-size 0.3s ease, background-color 0.3s ease, color 0.5s ease;
+      opacity: 1;
+      border-radius: 2rem;
+      position: absolute;
+      }
+      
+      .nav-item.prog {
+      left: 10em;
+      }
+      
+      .nav-item:not(:hover) {
+      opacity: 0.65;
+      }
+            
+      .nav-item:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      transform: scale(1.2);
+      opacity: 1;
+      font-size: 1.6rem;
+      color: rgb(223, 230, 214);
+      }
+            
+      .nav-item:hover ~ .nav-item2 {
+      opacity: 0.5;
+      }
+      
+      .aboutusnav:hover {
+      padding: 0.5rem 3rem;
+      position: absolute;
+      left: -2rem;
+      }
+      
+      /* dropdown menu*/
+      
+      .ourvis {
+      display: none;
+      position: absolute;
+      margin-left: -10rem;
+      margin-top: 0.1rem;
+      transition: transform 0.5s ease, opacity 0.5s ease, font-size 0.3s ease, background-color 0.3s ease, color 0.5s ease;
+      }
+       
+      .ourvis:not(:hover) {
+      opacity: 0.65;
+      }
+      
+      .ourvis:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 1;
+      font-size: 1.6rem;
+      color: rgb(223, 230, 214);
+      }
+      
+      .nav-item.aboutusnav:hover + .ourvis,
+      .ourvis:hover
+      {
+      display: inline-block;
+      }
+
+      /* dropdown menu end*/
+      
+      .navbar2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 5rem;
+      right: 11rem;
+      }
+            
+      .nav-list2 {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      z-index: 1;
+      margin-top: -2rem;
+      left: 75rem;
+      font-size: 1.5rem;
+      }
+            
+      .nav-item2 {
+      margin-right: 5rem;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-family: 'Bebas Neue', sans-serif;
+      white-space: nowrap;
+      transition: transform 0.5s ease, opacity 0.5s ease, font-size 0.3s ease, background-color 0.3s ease, color 0.5s ease;
+      opacity: 1;
+      border-radius: 2rem;
+      }
+      
+      .nav-item2:not(:hover) {
+      opacity: 0.65;
+      }
+        
+      .nav-item2:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      transform: scale(1.2);
+      opacity: 1;
+      font-size: 2rem;
+      color: rgb(223, 230, 214);
+      }
+        
+      .nav-item2:hover ~ .nav-item2 {
+      opacity: 0.5;
+      }
+    
+   
+/* Text and images */
+
+.whoarewe {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 6rem;
+display: flex;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+background-color: #000000;
+color: #BCF5A6;;
+padding: 0.1rem 1rem;
+top: 10rem;
+}
+
+.desc {
+font-family: 'Geologica', sans-serif;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 19rem;
+font-size: 2rem;
+padding-left: 100px;
+padding-right: 100px;
+}
+
+.desc2 {
+font-family: 'Geologica', sans-serif;
+text-align: center;
+display: flex;
+justify-content: center;
+margin-top: 8rem;
+font-size: 2rem;
+padding-left: 100px;
+padding-right: 100px;
+}
+
+.desc3 {
+font-family: 'Geologica', sans-serif;
+text-align: center;
+display: flex;
+justify-content: center;
+margin-top: 8rem;
+font-size: 2rem;
+padding-bottom: 53px;
+padding-left: 100px;
+padding-right: 100px;
+}
+
+.dumbbell {
+margin-left: 58rem;
+height: 4rem;
+width: 4rem;
+margin-top: 1rem;
+padding-bottom: 50px;
+}
